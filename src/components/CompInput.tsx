@@ -1,5 +1,5 @@
 import React from 'react';
-import {TextInput, StyleProp, ViewStyle} from 'react-native';
+import {TextInput, StyleProp, TextStyle} from 'react-native';
 const Input = (props: CompInputInterface) => {
   return (
     <TextInput
@@ -14,6 +14,6 @@ interface CompInputInterface {
   placeholder: string;
   placeholderTextColor: string;
   secure?: boolean;
-  TextInputStyle: StyleProp<ViewStyle>;
+  TextInputStyle: StyleProp<TextStyle>;
 }
 export default Input;
